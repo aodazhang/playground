@@ -1,0 +1,38 @@
+name: 项目构建发布
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 1.clone代码仓库到ubuntu
+        uses: actions/checkout@v2
+        with:
+          ref: master # 默认checkout master分支
+          persist-credentials: false
+
+      - name: 2.安装node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14'
+          registry-url: https://registry.npmjs.org/
+
+      - name: 3.安装项目依赖并构建
+        run: |
+          npm i yarn -g
+          yarn install
+          yarn build
+
+      - name: 4.发布到阿里云ECS
+        uses: easingthemes/ssh-deploy@v2
+        env:
+          ARGS: '-rltgoDzvO --delete'
+          SSH_PRIVATE_KEY: ${{ secrets.ECS_PRIVATE_KEY }} # ssh key
+          REMOTE_HOST: ${{ secrets.ECS_HOST }} # ECS公网地址
+          REMOTE_USER: ${{ secrets.ECS_USER }} # ECS用户名
+          SOURCE: dist/ # 构建目录
+          TARGET: /root/web-dist/playground # 部署目录

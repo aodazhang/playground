@@ -1,0 +1,38 @@
+@import 'aoda.css/dist/index.scss';
+
+:root {
+  --aoda-color1: #fff;
+  --aoda-color2: #333;
+  --aoda-color3: #666;
+  --aoda-color4: #aaa;
+  --aoda-color5: #f3f4f7;
+  --aoda-color6: #3b7ff3;
+  --aoda-color7: #fff;
+  --aoda-color8: #fff;
+  --aoda-color9: #fff;
+  --aoda-color10: #fff;
+  --aoda-color11: #fff;
+  --aoda-color12: #fff;
+  --aoda-color13: #fff;
+  --aoda-color14: #fff;
+  --aoda-color15: #fff;
+  --aoda-color16: #fff;
+  --aoda-color17: #fff;
+  --aoda-color18: #fff;
+  --aoda-color19: #fff;
+  --aoda-color20: #fff;
+
+  --aoda-font-size1: 32px;
+  --aoda-font-size2: 40px;
+}
+
+@font-face {
+  font-family: 'zkkl';
+  src: url('./assets/font/zkkl.ttf');
+}
+
+#app {
+  @include flex(center);
+  width: 100vw;
+  height: 100vh;
+}

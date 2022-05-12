@@ -1,0 +1,22 @@
+@import 'aoda.css/dist/index.scss';
+
+:root {
+  --aoda-color1: #fff;
+  --aoda-color2: #333;
+  --aoda-color3: #666;
+  --aoda-color4: #aaa;
+  --aoda-color5: #f3f4f7;
+  --aoda-color6: #3b7ff3;
+  --aoda-color7: #fff;
+  --aoda-color8: #fff;
+  --aoda-color9: #fff;
+  --aoda-color10: #fff;
+
+  --aoda-font-size1: 16px;
+  --aoda-font-size2: 20px;
+}
+
+.test-canvas,
+.test-webgl {
+  margin: 100px auto;
+}
