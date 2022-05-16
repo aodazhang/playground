@@ -22,6 +22,7 @@
     "dragonbones.js": "^5.7.4",
     "earcut": "^2.2.3",
     "gsap": "^3.10.4",
+    "phy-touch": "^0.1.1",
     "pinia": "^2.0.12",
     "pixi.js": "^5.3.11",
     "register-service-worker": "^1.7.2",
