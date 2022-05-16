@@ -1,6 +1,6 @@
 /**
  * @description cz-customizable配置文件
- * @author aodazhang 2022.05.12
+ * @author aodazhang 2022.05.16
  * @extends https://github.com/leoforfree/cz-customizable
  */
 
@@ -21,9 +21,7 @@ module.exports = {
   ],
   // 2.提交影响范围scope
   scopes: [
-    { name: 'app-car' },
-    { name: 'app-v3' },
-    { name: 'app-visualization' },
+    { name: 'app' },
     { name: 'public' },
     { name: 'template' },
     { name: 'tool' },

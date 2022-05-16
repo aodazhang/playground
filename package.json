@@ -11,7 +11,7 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=dev webpack serve --config ./webpack.config.js",
     "build": "rimraf dist && cross-env NODE_ENV=prod webpack --config ./webpack.config.js",
-    "lint": "prettier --write ./**/*.{js,ts,vue,json,md} && eslint --fix {tool,app-car,app-v3,app-visualization}/**/*.{ts,vue}",
+    "lint": "prettier --write ./**/*.{js,ts,vue,json,md} && eslint --fix {tool,app-car,app-three,app-v3,app-visualization}/**/*.{ts,vue}",
     "commit": "git add . && git-cz",
     "prepare": "husky install"
   },
@@ -27,6 +27,7 @@
     "pixi.js": "^5.3.11",
     "register-service-worker": "^1.7.2",
     "stats.js": "^0.17.0",
+    "three": "^0.140.2",
     "vconsole": "^3.14.3",
     "vue": "^3.2.31",
     "vue-router": "^4.0.14"
@@ -40,6 +41,7 @@
     "@commitlint/config-conventional": "^16.2.1",
     "@types/earcut": "^2.1.1",
     "@types/stats.js": "^0.17.0",
+    "@types/three": "^0.140.0",
     "@typescript-eslint/eslint-plugin": "^5.16.0",
     "@typescript-eslint/parser": "^5.16.0",
     "@vue/compiler-sfc": "^3.2.31",

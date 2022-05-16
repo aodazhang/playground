@@ -4,6 +4,7 @@
     "types/**/*.d.ts",
     "tool/**/*.ts",
     "app-car/**/*.ts",
+    "app-three/**/*.ts",
     "app-v3/**/*.ts",
     "app-v3/**/*.vue",
     "app-visualization/**/*.ts"
@@ -52,6 +53,7 @@
     "paths": {
       "@tool/*": ["tool/*"],
       "@app-car/*": ["app-car/*"],
+      "@app-three/*": ["app-three/*"],
       "@app-v3/*": ["app-v3/*"],
       "@app-visualization/*": ["app-visualization/*"]
     }, // 当前配置路径别名

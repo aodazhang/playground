@@ -1,6 +1,6 @@
 /**
  * @description postcss后处理器配置文件
- * @author aodazhang 2022.05.12
+ * @author aodazhang 2022.05.16
  * @extends https://www.postcss.com.cn/
  */
 
@@ -11,7 +11,7 @@ module.exports = {
     autoprefixer: {},
     // 转换css单位px为vw：https://github.com/evrone/postcss-px-to-viewport
     'postcss-px-to-viewport': {
-      exclude: [/node_modules/, /app-car/, /app-visualization/], // 忽略转换的目录
+      exclude: [/node_modules/, /app-car/, /app-three/, /app-visualization/], // 忽略转换的目录
       selectorBlackList: ['no2vw'], // 忽略转换的类名
       minPixelValue: 1, // 忽略转换的最大px值：>1px转换
       viewportWidth: 750, // 设计稿宽度
