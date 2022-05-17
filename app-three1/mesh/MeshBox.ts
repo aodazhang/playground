@@ -1,6 +1,6 @@
 import { BoxGeometry, Mesh, Vector3 } from 'three'
-import config from '@app-three/config'
-import Material from '@app-three/base/Material'
+import config from '@app-three1/config'
+import Material from '@app-three1/base/Material'
 
 export default class MeshBox {
   private instance: Mesh = null

@@ -1,5 +1,5 @@
 import { OrthographicCamera, PerspectiveCamera } from 'three'
-import config from '@app-three/config'
+import config from '@app-three1/config'
 
 export default class Camera {
   private instance: OrthographicCamera | PerspectiveCamera = null

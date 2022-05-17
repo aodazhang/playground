@@ -3,8 +3,9 @@
   "include": [
     "types/**/*.d.ts",
     "tool/**/*.ts",
+    "app-canvas1/**/*.ts",
     "app-car/**/*.ts",
-    "app-three/**/*.ts",
+    "app-three1/**/*.ts",
     "app-v3/**/*.ts",
     "app-v3/**/*.vue",
     "app-visualization/**/*.ts"
@@ -52,8 +53,9 @@
     "baseUrl": ".", // 当前项目根路径
     "paths": {
       "@tool/*": ["tool/*"],
+      "@app-canvas1/*": ["app-canvas1/*"],
       "@app-car/*": ["app-car/*"],
-      "@app-three/*": ["app-three/*"],
+      "@app-three1/*": ["app-three1/*"],
       "@app-v3/*": ["app-v3/*"],
       "@app-visualization/*": ["app-visualization/*"]
     }, // 当前配置路径别名
