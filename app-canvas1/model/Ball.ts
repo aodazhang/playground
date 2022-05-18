@@ -2,8 +2,11 @@
  * 小球类
  */
 export class Ball {
+  public id: string = null
   public x = 0
   public y = 0
+  public vx = 0
+  public vy = 0
   public radius = 20
   public scaleX = 1
   public scaleY = 1

@@ -1,28 +1,35 @@
 /**
  * @description 随机函数
- * @author aodazhang 2022.05.12
+ * @author aodazhang 2022.05.18
  * @see Math.random()的取值范围为[0,1)
  */
 
 /**
- * 求两数之间的一个随机整数
+ * 求两数之间的一个随机数
  * @param min 最小值
  * @param max 最大值
- * @returns [最小值, 最大值] 随机整数
+ * @param float 是否小数
+ * @returns [最小值, 最大值] 随机数
  */
-export function randomBetweenNumber(min: number, max: number): number {
+export function randomBetweenNumber(
+  min: number,
+  max: number,
+  float?: boolean
+): number {
+  let num: number = null
   if (
     typeof min !== 'number' ||
     isNaN(min) ||
     typeof max !== 'number' ||
     isNaN(max)
   ) {
-    return null
+    return num
   }
-  if (min > max) {
-    return Math.round(max + Math.random() * (min - max))
-  }
-  return Math.round(min + Math.random() * (max - min))
+  typeof float !== 'boolean' && (float = false)
+  min > max
+    ? (num = max + Math.random() * (min - max))
+    : (num = min + Math.random() * (max - min))
+  return float ? num : Math.round(num)
 }
 
 /**
@@ -36,4 +43,15 @@ export function randomArrayNumber(array: number[]): number {
   }
   const index = Math.floor(Math.random() * array.length)
   return array[index]
+}
+
+/**
+ * 生成随机rgb颜色
+ * @returns rgb颜色
+ */
+export function randomRgbColor() {
+  const red = randomBetweenNumber(100, 255)
+  const green = randomBetweenNumber(100, 255)
+  const blue = randomBetweenNumber(100, 255)
+  return `rgb(${red}, ${green}, ${blue})`
 }
