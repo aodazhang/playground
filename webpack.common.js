@@ -1,6 +1,6 @@
 /**
  * @description webpack5多页应用定义文件
- * @author aodazhang 2022.05.17
+ * @author aodazhang 2022.05.18
  * @extends https://webpack.docschina.org/configuration/
  */
 const path = require('path')
@@ -22,7 +22,7 @@ const hashRule = '[name]_[contenthash:8]'
 const alias = {
   '@tool': path.resolve(__dirname, 'tool'),
   '@app-canvas1': path.resolve(__dirname, 'app-canvas1'),
-  '@app-car': path.resolve(__dirname, 'app-car'),
+  '@app-pixi1': path.resolve(__dirname, 'app-pixi1'),
   '@app-three1': path.resolve(__dirname, 'app-three1'),
   '@app-v3': path.resolve(__dirname, 'app-v3'),
   '@app-visualization': path.resolve(__dirname, 'app-visualization'),

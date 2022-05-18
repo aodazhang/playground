@@ -4,7 +4,7 @@
     "types/**/*.d.ts",
     "tool/**/*.ts",
     "app-canvas1/**/*.ts",
-    "app-car/**/*.ts",
+    "app-pixi1/**/*.ts",
     "app-three1/**/*.ts",
     "app-v3/**/*.ts",
     "app-v3/**/*.vue",
@@ -54,7 +54,7 @@
     "paths": {
       "@tool/*": ["tool/*"],
       "@app-canvas1/*": ["app-canvas1/*"],
-      "@app-car/*": ["app-car/*"],
+      "@app-pixi1/*": ["app-pixi1/*"],
       "@app-three1/*": ["app-three1/*"],
       "@app-v3/*": ["app-v3/*"],
       "@app-visualization/*": ["app-visualization/*"]

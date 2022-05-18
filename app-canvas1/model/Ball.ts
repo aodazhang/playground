@@ -13,6 +13,7 @@ export class Ball {
   public fillStyle = 'rgb(57, 119, 224)'
   public storkeStyle = 'rgba(0, 0, 0, 0)'
   public alpha = 1
+  public isMove = false
 
   constructor(props?: unknown) {
     Object.assign(this, props || {})

@@ -1,6 +1,6 @@
 /**
  * @description postcss后处理器配置文件
- * @author aodazhang 2022.05.17
+ * @author aodazhang 2022.05.18
  * @extends https://www.postcss.com.cn/
  */
 
@@ -14,7 +14,7 @@ module.exports = {
       exclude: [
         /node_modules/,
         /app-canvas1/,
-        /app-car/,
+        /app-pixi1/,
         /app-three1/,
         /app-visualization/
       ], // 忽略转换的目录
