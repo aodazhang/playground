@@ -19,6 +19,14 @@ export class Ball {
     return this
   }
 
+  /** 判断鼠标坐标是否在小球内 */
+  isPoint(point: { x: number; y: number }) {
+    return (
+      this.radius >=
+      Math.sqrt(Math.pow(point.x - this.x, 2) + Math.pow(point.y - this.y, 2))
+    )
+  }
+
   render(ctx: CanvasRenderingContext2D) {
     ctx.save()
     ctx.fillStyle = this.fillStyle
