@@ -34,3 +34,6 @@ import './lesson/5/5-2'
 import './lesson/5/5-3'
 import './lesson/5/5-4'
 import './lesson/5/5-6'
+
+import './lesson/6/6-1'
+import './lesson/6/6-2'

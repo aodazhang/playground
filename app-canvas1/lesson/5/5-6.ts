@@ -10,10 +10,11 @@ const ball = new Ball({
   radius: 30,
   fillStyle: randomRgbColor()
 })
-const box = new Box({ x: 300, y: 300, width: 120, height: 70 })
+const box = new Box({ x: 300, y: 400, width: 150, height: 10 })
 
 const g = 0.3 // 重力加速度
 const f = 0.98 // 摩擦力
+const b = -1 // 反弹
 const easing = 0.05 // 缓动系数
 let isMove = false
 
@@ -37,16 +38,20 @@ canvas.addEventListener('mousedown', e => {
     // 2.重力
     ball.vy += g
 
+    // 3.碰撞检测
+    if (checkHit(ball, box)) {
+      ball.vy *= b
+    }
+
     ball.x += ball.vx
     ball.y += ball.vy
 
-    // 3.边界处理和碰撞检测
+    // 4.边界处理
     if (
       ball.x - ball.radius >= canvas.width ||
       ball.x + ball.radius <= 0 ||
       ball.y - ball.radius >= canvas.height ||
-      ball.y + ball.radius <= 0 ||
-      checkHit(ball, box)
+      ball.y + ball.radius <= 0
     ) {
       // 自动归位处理
       isMove = false

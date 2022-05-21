@@ -14,6 +14,32 @@ interface Circle {
 }
 
 /**
+ * canvas边界检测
+ * @param canvas 绘图元素
+ * @param ball 检测目标
+ * @param bounce 反弹系数
+ */
+export function detectionEdge(
+  canvas: HTMLCanvasElement,
+  ball: Circle,
+  bounce: number
+) {
+  if (ball.x - ball.radius <= 0) {
+    ball.vx *= bounce
+    ball.x = ball.radius
+  } else if (ball.x + ball.radius >= canvas.width) {
+    ball.vx *= bounce
+    ball.x = canvas.width - ball.radius
+  } else if (ball.y - ball.radius <= 0) {
+    ball.vy *= bounce
+    ball.y = ball.radius
+  } else if (ball.y + ball.radius >= canvas.height) {
+    ball.vy *= bounce
+    ball.y = canvas.height - ball.radius
+  }
+}
+
+/**
  * 矩形的碰撞检测
  * @param rect1 矩形1
  * @param rect2 矩形2
