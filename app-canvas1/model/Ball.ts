@@ -8,6 +8,7 @@ export class Ball {
   public vx = 0
   public vy = 0
   public radius = 20
+  public m = 0
   public scaleX = 1
   public scaleY = 1
   public fillStyle = 'rgb(57, 119, 224)'

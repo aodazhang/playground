@@ -1,5 +1,5 @@
 import { Ball, Box } from '@app-canvas1/model'
-import { createCanvas, detectionShadow1 } from '@app-canvas1/utils'
+import { createCanvas, detectionShadow } from '@app-canvas1/utils'
 import { randomRgbColor } from '@tool/random'
 
 const { canvas, ctx, point } = createCanvas('5-6.光线投影法碰撞检测')
@@ -18,7 +18,7 @@ const b = -1 // 反弹
 const easing = 0.05 // 缓动系数
 let isMove = false
 
-const checkHit = detectionShadow1()
+const checkHit = detectionShadow()
 
 canvas.addEventListener('mousedown', e => {
   e.preventDefault()
