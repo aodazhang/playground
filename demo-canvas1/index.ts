@@ -44,3 +44,7 @@ import './lesson/7/7-5'
 
 import './lesson/8/8-2'
 import './lesson/8/8-3'
+
+import './lesson/9/9-2'
+import './lesson/9/9-3'
+import './lesson/9/9-5'

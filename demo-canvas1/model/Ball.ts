@@ -5,8 +5,13 @@ export class Ball {
   public id: string = null
   public x = 0
   public y = 0
+  public x3d = 0
+  public y3d = 0
+  public z3d = 0
   public vx = 0
   public vy = 0
+  public vz = 0
+  public az = 0
   public radius = 20
   public m = 0
   public scaleX = 1
@@ -15,6 +20,7 @@ export class Ball {
   public storkeStyle = 'rgba(0, 0, 0, 0)'
   public alpha = 1
   public isMove = false
+  public isRender = true
 
   constructor(props?: unknown) {
     Object.assign(this, props || {})

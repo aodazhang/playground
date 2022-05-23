@@ -2,7 +2,7 @@
 
 [app-car](https://aodazhang.com/project/playground/app-car.html)：重构游戏 [pixijs_game_crazy_car](https://github.com/Zion0707/pixijs_game_crazy_car)
 
-[demo-canvas1](https://aodazhang.com/project/playground/demo-canvas1.html)：课程代码 [妙味 canvas 动画](https://study.miaov.com/study/remote/chapter/336)
+[demo-canvas1](https://aodazhang.com/project/playground/demo-canvas1.html)：课程代码 [canvas 动画揭秘](https://study.miaov.com/study/remote/chapter/336)
 
 [demo-three1](https://aodazhang.com/project/playground/demo-three1.html)：three.js 波浪动画
 
