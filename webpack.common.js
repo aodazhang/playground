@@ -1,6 +1,6 @@
 /**
  * @description webpack5多页应用定义文件
- * @author aodazhang 2022.05.18
+ * @author aodazhang 2022.05.23
  * @extends https://webpack.docschina.org/configuration/
  */
 const path = require('path')
@@ -21,11 +21,11 @@ const hashRule = '[name]_[contenthash:8]'
 /** 路径别名：js -> '@/'、css -> '~@/' */
 const alias = {
   '@tool': path.resolve(__dirname, 'tool'),
-  '@app-canvas1': path.resolve(__dirname, 'app-canvas1'),
-  '@app-pixi1': path.resolve(__dirname, 'app-pixi1'),
-  '@app-three1': path.resolve(__dirname, 'app-three1'),
-  '@app-v3': path.resolve(__dirname, 'app-v3'),
-  '@app-visualization': path.resolve(__dirname, 'app-visualization'),
+  '@app-car': path.resolve(__dirname, 'app-car'),
+  '@demo-canvas1': path.resolve(__dirname, 'demo-canvas1'),
+  '@demo-three1': path.resolve(__dirname, 'demo-three1'),
+  '@demo-visualization': path.resolve(__dirname, 'demo-visualization'),
+  '@demo-vue3': path.resolve(__dirname, 'demo-vue3'),
   crypto: false // webpack5中移除了nodejs核心模块的polyfill自动引入，需要手动引入
 }
 /** webpack注入全局变量 */

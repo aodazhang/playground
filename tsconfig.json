@@ -3,12 +3,12 @@
   "include": [
     "types/**/*.d.ts",
     "tool/**/*.ts",
-    "app-canvas1/**/*.ts",
-    "app-pixi1/**/*.ts",
-    "app-three1/**/*.ts",
-    "app-v3/**/*.ts",
-    "app-v3/**/*.vue",
-    "app-visualization/**/*.ts"
+    "app-car/**/*.ts",
+    "demo-canvas1/**/*.ts",
+    "demo-three1/**/*.ts",
+    "demo-visualization/**/*.ts",
+    "demo-vue3/**/*.ts",
+    "demo-vue3/**/*.vue"
   ],
   // 二.ts忽略编译文件夹
   "exclude": ["node_modules"],
@@ -53,11 +53,11 @@
     "baseUrl": ".", // 当前项目根路径
     "paths": {
       "@tool/*": ["tool/*"],
-      "@app-canvas1/*": ["app-canvas1/*"],
-      "@app-pixi1/*": ["app-pixi1/*"],
-      "@app-three1/*": ["app-three1/*"],
-      "@app-v3/*": ["app-v3/*"],
-      "@app-visualization/*": ["app-visualization/*"]
+      "@app-car/*": ["app-car/*"],
+      "@demo-canvas1/*": ["demo-canvas1/*"],
+      "@demo-three1/*": ["demo-three1/*"],
+      "@demo-visualization/*": ["demo-visualization/*"],
+      "@demo-vue3/*": ["demo-vue3/*"]
     }, // 当前配置路径别名
 
     /* 5.命名空间配置 */

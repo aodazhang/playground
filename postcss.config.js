@@ -1,6 +1,6 @@
 /**
  * @description postcss后处理器配置文件
- * @author aodazhang 2022.05.18
+ * @author aodazhang 2022.05.23
  * @extends https://www.postcss.com.cn/
  */
 
@@ -13,10 +13,10 @@ module.exports = {
     'postcss-px-to-viewport': {
       exclude: [
         /node_modules/,
-        /app-canvas1/,
-        /app-pixi1/,
-        /app-three1/,
-        /app-visualization/
+        /app-car/,
+        /demo-canvas1/,
+        /demo-three1/,
+        /demo-visualization/
       ], // 忽略转换的目录
       selectorBlackList: ['no2vw'], // 忽略转换的类名
       minPixelValue: 1, // 忽略转换的最大px值：>1px转换
