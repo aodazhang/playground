@@ -1,7 +1,5 @@
-import { getCanvasCtx } from '../utils/context'
+import { createCanvas } from '@tool/create'
 import Vector2D from '../utils/Vector2D'
-
-const { ctx } = getCanvasCtx()
 
 /**
  * 坐标系
@@ -43,12 +41,15 @@ const { ctx } = getCanvasCtx()
    * 本质上是通过向量的相加来确定线段的绘制，不断递归此逻辑，直到树枝直径低于临界值
    */
 
+  const { ctx } = createCanvas('05.用向量绘制一棵树')
+
   const v0 = new Vector2D(0, -200)
-  draw(v0, 50, 15, 1.5, 3)
+  draw(ctx, v0, 50, 15, 1.5, 3)
 }
 
 /**
  * 树枝绘制函数
+ * @param ctx 绘图上下文
  * @param v0 起始向量
  * @param length 树枝长度
  * @param thickness 树枝粗细
@@ -56,6 +57,7 @@ const { ctx } = getCanvasCtx()
  * @param bias 随机方向因子，控制树枝朝向随机性
  */
 function draw(
+  ctx: CanvasRenderingContext2D,
   v0: Vector2D,
   length: number,
   thickness: number,
@@ -77,9 +79,9 @@ function draw(
 
   if (thickness > 2) {
     const left = Math.PI / 4 + 0.5 * (dir + 0.2) + bias * (Math.random() - 0.5)
-    draw(v1, length * 0.9, thickness * 0.8, left, bias * 0.9)
+    draw(ctx, v1, length * 0.9, thickness * 0.8, left, bias * 0.9)
     const right = Math.PI / 4 + 0.5 * (dir - 0.2) + bias * (Math.random() - 0.5)
-    draw(v1, length * 0.9, thickness * 0.8, right, bias * 0.9)
+    draw(ctx, v1, length * 0.9, thickness * 0.8, right, bias * 0.9)
   }
 
   if (thickness < 4) {

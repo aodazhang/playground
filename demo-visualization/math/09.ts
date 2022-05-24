@@ -6,7 +6,7 @@
  * 2.对两条直线段 a 和 b 应用同样的仿射变换，变换前后线段长度比例保持不变
  */
 
-import { getWebglCtx } from '../utils/context'
+import { createWebgl } from '@tool/create'
 import { multiply } from '../utils/mat3Func'
 
 /**
@@ -62,9 +62,9 @@ import { multiply } from '../utils/mat3Func'
    * 实例1：webgl粒子发射动画
    */
 
-  /********************* 一.创建webgl程序 *********************/
+  const { gl } = createWebgl('09.webgl粒子发射动画')
 
-  const gl = getWebglCtx().ctx
+  /********************* 一.创建webgl程序 *********************/
 
   // 顶点着色器
   const vertex = `

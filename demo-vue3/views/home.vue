@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>page_1</h1>
+    <h1>Home</h1>
     <p>构建时间：{{ buildTime }}</p>
     <p>标题：{{ title }}</p>
     <p>姓名：{{ name }}</p>

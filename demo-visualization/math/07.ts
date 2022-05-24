@@ -1,4 +1,4 @@
-import { getCanvasCtx } from '../utils/context'
+import { createCanvas } from '@tool/create'
 import { drawPointToLine } from '../utils/draw'
 import Vector2D from '../utils/Vector2D'
 
@@ -31,7 +31,9 @@ import Vector2D from '../utils/Vector2D'
     return ret
   }
 
-  drawPointToLine(getCanvasCtx().ctx, regularShape(5, 0, 0, 100))
+  const { ctx } = createCanvas('07.用向量描述曲线')
+
+  drawPointToLine(ctx, regularShape(5, 0, 0, 100))
 }
 
 {
@@ -77,7 +79,9 @@ import Vector2D from '../utils/Vector2D'
     return ret
   }
 
-  drawPointToLine(getCanvasCtx().ctx, arc(0, 0, 100, Math.PI * 1))
+  const { ctx } = createCanvas('07.用参数方程描述圆')
+
+  drawPointToLine(ctx, arc(0, 0, 100))
 }
 
 {
@@ -125,7 +129,9 @@ import Vector2D from '../utils/Vector2D'
     return ret
   }
 
-  drawPointToLine(getCanvasCtx().ctx, ellipse(0, 0, 100, 50))
+  const { ctx } = createCanvas('07.用参数方程描述椭圆')
+
+  drawPointToLine(ctx, ellipse(0, 0, 100, 50))
 }
 
 {
@@ -163,7 +169,9 @@ import Vector2D from '../utils/Vector2D'
     return ret
   }
 
-  drawPointToLine(getCanvasCtx().ctx, parabola(0, 0, 3, -6, 6))
+  const { ctx } = createCanvas('07.用参数方程描述抛物线')
+
+  drawPointToLine(ctx, parabola(0, 0, 3, -6, 6))
 }
 
 {
@@ -171,20 +179,25 @@ import Vector2D from '../utils/Vector2D'
    * 实例5：用高阶函数代替参数方程
    */
 
+  const { ctx } = createCanvas('07.用高阶函数代替参数方程')
+
   // 抛物线
   const para = parametric(
+    ctx,
     t => 25 * t,
     t => 25 * Math.pow(t, 2)
   )
 
   // 阿基米德螺旋线
   const helical = parametric(
+    ctx,
     (t, l) => t * l * Math.cos(t),
     (t, l) => t * l * Math.sin(t)
   )
 
   // 星形线
   const star = parametric(
+    ctx,
     (t, l) => l * Math.pow(Math.cos(t), 3),
     (t, l) => l * Math.pow(Math.sin(t), 3)
   )
@@ -199,7 +212,10 @@ import Vector2D from '../utils/Vector2D'
    * 实例6：二阶贝塞尔曲线
    */
 
+  const { ctx } = createCanvas('07.二阶贝塞尔曲线')
+
   const bezier2 = parametric(
+    ctx,
     (t, [{ x: x0 }, { x: x1 }, { x: x2 }]) =>
       (1 - t) ** 2 * x0 + 2 * (1 - t) * t * x1 + t ** 2 * x2,
     (t, [{ y: y0 }, { y: y1 }, { y: y2 }]) =>
@@ -221,7 +237,10 @@ import Vector2D from '../utils/Vector2D'
    * 实例7：三阶贝塞尔曲线
    */
 
+  const { ctx } = createCanvas('07.三阶贝塞尔曲线')
+
   const bezier3 = parametric(
+    ctx,
     (t, [{ x: x0 }, { x: x1 }, { x: x2 }, { x: x3 }]) =>
       (1 - t) ** 3 * x0 +
       3 * t * (1 - t) ** 2 * x1 +
@@ -254,10 +273,10 @@ import Vector2D from '../utils/Vector2D'
  * @returns 绘制函数
  */
 function parametric(
+  ctx: CanvasRenderingContext2D,
   xFunc: (...args: any[]) => number,
   yFunc: (...args: any[]) => number
 ) {
-  const { ctx } = getCanvasCtx()
   return function (
     start: number,
     end: number,

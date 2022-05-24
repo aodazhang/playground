@@ -4,7 +4,7 @@
  */
 import * as PIXI from 'pixi.js'
 import BaseScene from '../base/BaseScene'
-import { isAABBRectHit } from '@tool/aabb'
+import { detectionPixiRect } from '@tool/detection'
 import { randomArrayNumber, randomBetweenNumber } from '@tool/random'
 import { soundPlay } from '@tool/sound'
 import { Z_INDEX } from '../utils'
@@ -211,7 +211,7 @@ export default class GameScene extends BaseScene {
         } else {
           item.y += speed
         }
-        if (!isAABBRectHit(this.car, item)) {
+        if (!detectionPixiRect(this.car, item)) {
           return
         }
         // 碰撞障碍物位置调整

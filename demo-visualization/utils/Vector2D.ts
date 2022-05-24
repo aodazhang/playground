@@ -68,7 +68,7 @@ export default class Vector2D {
     const cos = Math.cos(val)
     const sin = Math.sin(val)
     const { x, y } = this
-    this.x = x * cos + y * -sin
+    this.x = x * cos - y * sin
     this.y = x * sin + y * cos
     return this
   }

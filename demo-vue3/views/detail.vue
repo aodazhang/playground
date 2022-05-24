@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>page_2</h1>
+    <h1>Detail</h1>
     <p>标题：{{ title }}</p>
     <button @click="router.go(-1)">返回</button>
   </div>

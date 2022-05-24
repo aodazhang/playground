@@ -1,9 +1,9 @@
-import { getWebglCtx } from '../utils/context'
+import { createWebgl } from '@tool/create'
 
 {
   /********************* 一.创建webgl上下文 *********************/
 
-  const gl = getWebglCtx().ctx
+  const { gl } = createWebgl('04.webgl绘制流程')
 
   /********************* 二.创建webgl程序 *********************/
 
