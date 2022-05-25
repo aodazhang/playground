@@ -1,5 +1,5 @@
-import { Ball } from '@demo-canvas1/model'
-import { createCanvas } from '@demo-canvas1/utils'
+import { Ball } from '../../model'
+import { createCanvas } from '../../utils'
 
 const { canvas, ctx } = createCanvas('4-1.缓出ease out')
 

@@ -1,5 +1,5 @@
 import { MeshPhongMaterial } from 'three'
-import config from '@demo-three1/config'
+import config from '../config'
 
 export default class Material {
   private instance: MeshPhongMaterial = null

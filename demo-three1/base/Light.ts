@@ -1,5 +1,5 @@
 import { AmbientLight, DirectionalLight } from 'three'
-import config from '@demo-three1/config'
+import config from '../config'
 
 export default class Light {
   private instance: AmbientLight | DirectionalLight = null

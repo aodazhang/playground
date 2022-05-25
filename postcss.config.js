@@ -1,6 +1,6 @@
 /**
  * @description postcss后处理器配置文件
- * @author aodazhang 2022.05.23
+ * @author aodazhang 2022.05.25
  * @extends https://www.postcss.com.cn/
  */
 
@@ -16,6 +16,7 @@ module.exports = {
         /app-car/,
         /demo-canvas1/,
         /demo-three1/,
+        /demo-three2/,
         /demo-visualization/
       ], // 忽略转换的目录
       selectorBlackList: ['no2vw'], // 忽略转换的类名

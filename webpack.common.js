@@ -1,6 +1,6 @@
 /**
  * @description webpack5多页应用定义文件
- * @author aodazhang 2022.05.23
+ * @author aodazhang 2022.05.25
  * @extends https://webpack.docschina.org/configuration/
  */
 const path = require('path')
@@ -21,10 +21,6 @@ const hashRule = '[name]_[contenthash:8]'
 /** 路径别名：js -> '@/'、css -> '~@/' */
 const alias = {
   '@tool': path.resolve(__dirname, 'tool'),
-  '@app-car': path.resolve(__dirname, 'app-car'),
-  '@demo-canvas1': path.resolve(__dirname, 'demo-canvas1'),
-  '@demo-three1': path.resolve(__dirname, 'demo-three1'),
-  '@demo-visualization': path.resolve(__dirname, 'demo-visualization'),
   '@demo-vue3': path.resolve(__dirname, 'demo-vue3'),
   crypto: false // webpack5中移除了nodejs核心模块的polyfill自动引入，需要手动引入
 }

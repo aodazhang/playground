@@ -1,6 +1,6 @@
-import { Ball } from '@demo-canvas1/model'
-import { createCanvas } from '@demo-canvas1/utils'
 import { randomBetweenNumber } from '@tool/random'
+import { Ball } from '../../model'
+import { createCanvas } from '../../utils'
 
 const { canvas, ctx, center, point } = createCanvas('3-4.[案例]投掷动画')
 

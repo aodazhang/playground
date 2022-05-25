@@ -1,6 +1,6 @@
-import { Box } from '@demo-canvas1/model'
-import { createCanvas, detectionRect } from '@demo-canvas1/utils'
 import { randomRgbColor } from '@tool/random'
+import { Box } from '../../model'
+import { createCanvas, detectionRect } from '../../utils'
 
 const { canvas, ctx, point } = createCanvas('5-1.矩形的碰撞检测')
 

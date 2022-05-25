@@ -1,5 +1,5 @@
 import { WebGLRenderer } from 'three'
-import config from '@demo-three1/config'
+import config from '../config'
 
 export default class Renderer {
   private instance: WebGLRenderer = null

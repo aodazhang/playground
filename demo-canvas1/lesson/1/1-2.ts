@@ -1,4 +1,4 @@
-import { createCanvas, toAngle } from '@demo-canvas1/utils'
+import { createCanvas, toAngle } from '../../utils'
 
 const { canvas, ctx, point, center } = createCanvas('1-2.三角函数')
 

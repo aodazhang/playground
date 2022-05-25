@@ -1,5 +1,5 @@
-import { Arrow } from '@demo-canvas1/model'
-import { createCanvas } from '@demo-canvas1/utils'
+import { Arrow } from '../../model'
+import { createCanvas } from '../../utils'
 
 const { canvas, ctx, center, point } =
   createCanvas('1-9.[案例]箭头跟随鼠标运动')

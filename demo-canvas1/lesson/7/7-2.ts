@@ -1,10 +1,6 @@
-import { Ball } from '@demo-canvas1/model'
-import {
-  createCanvas,
-  detectionCircle,
-  detectionEdge
-} from '@demo-canvas1/utils'
 import { randomRgbColor } from '@tool/random'
+import { Ball } from '../../model'
+import { createCanvas, detectionCircle, detectionEdge } from '../../utils'
 
 const { canvas, ctx, center } = createCanvas('7-2.一维碰撞')
 

@@ -1,6 +1,6 @@
 /**
  * @description 资源类文件shims
- * @author aodazhang 2022.05.12
+ * @author aodazhang 2022.05.25
  */
 
 /* eslint-disable */
@@ -96,6 +96,11 @@ declare module '*.wav' {
 }
 
 declare module '*.fnt' {
+  const src: string
+  export default src
+}
+
+declare module '*.gltf' {
   const src: string
   export default src
 }

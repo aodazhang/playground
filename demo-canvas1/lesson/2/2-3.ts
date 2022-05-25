@@ -1,5 +1,5 @@
-import { Arrow } from '@demo-canvas1/model'
-import { createCanvas, toRad } from '@demo-canvas1/utils'
+import { Arrow } from '../../model'
+import { createCanvas, toRad } from '../../utils'
 
 const { canvas, ctx, center } = createCanvas('2-3.环境边界（环绕）')
 

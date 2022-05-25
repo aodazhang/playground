@@ -1,5 +1,5 @@
-import { Ball, Line } from '@demo-canvas1/model'
-import { createCanvas, detectionEdge, toRad } from '@demo-canvas1/utils'
+import { Ball, Line } from '../../model'
+import { createCanvas, detectionEdge, toRad } from '../../utils'
 
 const { canvas, ctx } = createCanvas('6-2.斜面反弹')
 

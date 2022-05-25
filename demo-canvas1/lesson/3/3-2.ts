@@ -1,5 +1,5 @@
-import { Ball } from '@demo-canvas1/model'
-import { createCanvas } from '@demo-canvas1/utils'
+import { Ball } from '../../model'
+import { createCanvas } from '../../utils'
 
 const { canvas, ctx, center, point } = createCanvas('3-2.拖拽绘制对象')
 

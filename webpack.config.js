@@ -1,6 +1,6 @@
 /**
  * @description webpack5多页应用配置文件
- * @author aodazhang 2022.05.12
+ * @author aodazhang 2022.05.25
  * @extends https://webpack.docschina.org/configuration/
  */
 const path = require('path')
@@ -165,6 +165,13 @@ const baseConfig = {
         type: 'asset/resource', // url发送
         generator: {
           filename: `file/${hashRule}[ext]`
+        }
+      },
+      {
+        test: /\.(gltf)$/,
+        type: 'asset/resource', // url发送
+        generator: {
+          filename: `3d/${hashRule}[ext]`
         }
       }
     ]

@@ -1,6 +1,6 @@
-import { Box } from '@demo-canvas1/model'
-import { createCanvas, detectionRect } from '@demo-canvas1/utils'
 import { randomBetweenNumber, randomRgbColor } from '@tool/random'
+import { Box } from '../../model'
+import { createCanvas, detectionRect } from '../../utils'
 
 const { canvas, ctx } = createCanvas('5-2.[案例]简易俄罗斯方块')
 

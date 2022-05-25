@@ -6,6 +6,7 @@
     "app-car/**/*.ts",
     "demo-canvas1/**/*.ts",
     "demo-three1/**/*.ts",
+    "demo-three2/**/*.ts",
     "demo-visualization/**/*.ts",
     "demo-vue3/**/*.ts",
     "demo-vue3/**/*.vue"
@@ -53,10 +54,6 @@
     "baseUrl": ".", // 当前项目根路径
     "paths": {
       "@tool/*": ["tool/*"],
-      "@app-car/*": ["app-car/*"],
-      "@demo-canvas1/*": ["demo-canvas1/*"],
-      "@demo-three1/*": ["demo-three1/*"],
-      "@demo-visualization/*": ["demo-visualization/*"],
       "@demo-vue3/*": ["demo-vue3/*"]
     }, // 当前配置路径别名
 

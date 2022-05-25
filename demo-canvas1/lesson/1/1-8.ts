@@ -1,5 +1,5 @@
-import { Ball } from '@demo-canvas1/model'
-import { createCanvas, toRad } from '@demo-canvas1/utils'
+import { Ball } from '../../model'
+import { createCanvas, toRad } from '../../utils'
 
 const { canvas, ctx } = createCanvas('1-8.速度向量')
 
