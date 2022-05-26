@@ -7,6 +7,7 @@
     "demo-canvas1/**/*.ts",
     "demo-three1/**/*.ts",
     "demo-three2/**/*.ts",
+    "demo-three3/**/*.ts",
     "demo-visualization/**/*.ts",
     "demo-vue3/**/*.ts",
     "demo-vue3/**/*.vue"

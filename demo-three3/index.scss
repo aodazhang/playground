@@ -1,0 +1,15 @@
+@import 'aoda.css/dist/index.scss';
+
+section {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+button {
+  padding: 6px 10px;
+}
+
+button + button {
+  margin-left: 10px;
+}
