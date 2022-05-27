@@ -5,6 +5,7 @@
     "tool/**/*.ts",
     "app-car/**/*.ts",
     "demo-canvas1/**/*.ts",
+    "demo-pixi1/**/*.ts",
     "demo-three1/**/*.ts",
     "demo-three2/**/*.ts",
     "demo-three3/**/*.ts",

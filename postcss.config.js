@@ -1,6 +1,6 @@
 /**
  * @description postcss后处理器配置文件
- * @author aodazhang 2022.05.26
+ * @author aodazhang 2022.05.27
  * @extends https://www.postcss.com.cn/
  */
 
@@ -15,6 +15,7 @@ module.exports = {
         /node_modules/,
         /app-car/,
         /demo-canvas1/,
+        /demo-pixi1/,
         /demo-three1/,
         /demo-three2/,
         /demo-three3/,
