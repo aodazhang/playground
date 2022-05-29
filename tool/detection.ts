@@ -1,6 +1,6 @@
 /**
  * @description 碰撞检测
- * @author aodazhang 2022.05.24
+ * @author aodazhang 2022.05.29
  */
 import * as PIXI from 'pixi.js'
 
@@ -8,12 +8,15 @@ type Rect = { x: number; y: number; width: number; height: number }
 type Circle = { x: number; y: number; radius: number }
 
 /**
- * pixi精灵的矩形碰撞检测（AABB）
+ * pixi矩形的碰撞检测（AABB法）
  * @param g1 图形1
  * @param g2 图形2
  * @returns 是否碰撞
  */
-export function detectionPixiRect(g1: PIXI.Sprite, g2: PIXI.Sprite): boolean {
+export function detectionPixiRect(
+  g1: PIXI.DisplayObject,
+  g2: PIXI.DisplayObject
+): boolean {
   const b1 = g1.getBounds()
   const b2 = g2.getBounds()
   return (

@@ -11,7 +11,7 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=dev webpack serve --config ./webpack.config.js",
     "build": "rimraf dist && cross-env NODE_ENV=prod webpack --config ./webpack.config.js",
-    "lint": "prettier --write ./**/*.{js,ts,vue,json,md} && eslint --fix {tool,app-car,demo-canvas1,demo-pixi1,demo-three1,demo-three2,demo-three3,demo-visualization,demo-vue3}/**/*.{ts,vue}",
+    "lint": "prettier --write ./**/*.{js,ts,vue,json,md} && eslint --fix {tool,app-car,demo-canvas1,demo-pixi1,demo-pixi2,demo-three1,demo-three2,demo-three3,demo-visualization,demo-vue3}/**/*.{ts,vue}",
     "commit": "git add . && git-cz",
     "prepare": "husky install"
   },

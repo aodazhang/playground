@@ -179,7 +179,7 @@ function createTimeLineAnimate() {
   timeLine.add(scenceTween, 0)
 
   // 2.星星显现
-  const p1Star = getChild('scene/scene1/p1Star')
+  const p1Star = getChild('scene/scene1/p1-star')
   const p1StarDelay = -15 / min
   const p1StarDuration = -50 / min
   const p1StarTween = gsap.to(p1Star, {
@@ -213,7 +213,7 @@ function createTimeLineAnimate() {
   timeLine.add(scene2Tween, scene2Delay)
 
   // 5.音符飘动
-  const p2Yinfu = getChild('scene/scene2/p2Yinfu')
+  const p2Yinfu = getChild('scene/scene2/p2-yinfu')
   const p2YinfuDelay = -2450 / min
   const p2YinfuDuration = -200 / min
   const p2YinfuTween = gsap.to(p2Yinfu, {
@@ -227,7 +227,7 @@ function createTimeLineAnimate() {
   timeLine.add(p2YinfuTween, p2YinfuDelay)
 
   // // 6.黑夜缩小为窗户
-  const p32 = getChild('scene/scene3/p32')
+  const p32 = getChild('scene/scene3/p3-2')
   const p32Delay = -2580 / min
   const p32Duration = -800 / min
   const p32Tween = gsap.from(p32, {
@@ -242,7 +242,7 @@ function createTimeLineAnimate() {
   timeLine.add(p32Tween, p32Delay)
 
   // 7.工作中男孩出现
-  const p31 = getChild('scene/scene3/p31')
+  const p31 = getChild('scene/scene3/p3-1')
   const p31Delay = -2780 / min
   const p31Duration = -400 / min
   const p31Tween1 = gsap.to(p31, {
