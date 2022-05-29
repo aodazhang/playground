@@ -1,6 +1,6 @@
 /**
  * @description webpack5多页应用配置文件
- * @author aodazhang 2022.05.25
+ * @author aodazhang 2022.05.29
  * @extends https://webpack.docschina.org/configuration/
  */
 const path = require('path')
@@ -247,7 +247,7 @@ const prodConfig = {
       chunkFilename: `css/${hashRule}.chunk.css`
     }),
     new CompressionWebpackPlugin({
-      test: /\.(html|css|js)$/, // 匹配文件类型
+      test: /\.(html|css|js|png|jpg|ttf|mp3|xml|gltf)$/, // 匹配文件类型
       algorithm: 'gzip', // 压缩算法
       threshold: 0 * 1024, // gzip压缩大小阈值（kb）：文件大小>0kb执行压缩
       minRatio: 0.8, // gzip压缩比率阈值（%）：文件压缩阈值<0.8执行压缩
