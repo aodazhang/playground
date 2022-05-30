@@ -8,6 +8,8 @@
 
 [demo-pixi2](https://aodazhang.com/project/playground/demo-pixi2.html)：课程代码 [从英雄联盟来学 pixi.js](https://juejin.cn/post/6937862827499749406)
 
+[demo-pixi3](https://aodazhang.com/project/playground/demo-pixi3.html)：官方 demo 测试 [examples](https://pixijs.io/examples)
+
 [demo-three1](https://aodazhang.com/project/playground/demo-three1.html)：Web3D 波浪动画
 
 [demo-three2](https://aodazhang.com/project/playground/demo-three2.html)：Web3D 冰墩墩 [用 JS 在网页里渲染一个冰墩墩](https://www.bilibili.com/video/BV17L4y1s7sv)
